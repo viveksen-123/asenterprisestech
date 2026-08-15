@@ -30,12 +30,12 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "AS ENTERPRISES - CP PLUS CCTV Installation in Bhopal",
+        content: "AS ENTERPRISES - CP PLUS CCTV Camera Installation & Security Solutions | Bhopal",
       },
       {
         property: "og:description",
         content:
-          "HD/4K CCTV cameras, live mobile view and DVR/NVR setup for home, shop, office and factory in Bhopal.",
+          "Professional CP PLUS CCTV camera installation, service & maintenance in Bhopal. HD/4K cameras, live mobile view, DVR/NVR setup for home, shop, office and factory.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
