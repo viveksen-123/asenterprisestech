@@ -2,12 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 
 import { siteCss, siteHtml } from "@/lib/site-content";
-import techImg from "@/assets/tech-expert.jpg.asset.json";
 import logoImg from "@/assets/as-logo.jpg.asset.json";
 
-const html = siteHtml
-  .replace("__IMG_LOGO__", logoImg.url)
-  .replace("__IMG_ANKUSH__", techImg.url);
+const html = siteHtml.replace("__IMG_LOGO__", logoImg.url);
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -108,7 +105,7 @@ function Index() {
       const val = (id: string) =>
         (document.getElementById(id) as HTMLInputElement | HTMLTextAreaElement | null)?.value || "";
       const text = `Hello AS ENTERPRISES!\nName: ${val("formName")}\nPhone: ${val("formPhone")}\nService: ${val("formService")}\nMessage: ${val("formMessage")}`;
-      window.location.href = `https://wa.me/917007937097?text=${encodeURIComponent(text)}`;
+      window.location.href = `https://wa.me/919424411083?text=${encodeURIComponent(text)}`;
     };
     form?.addEventListener("submit", onSubmit);
 
