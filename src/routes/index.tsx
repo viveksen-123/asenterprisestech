@@ -2,16 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 
 import { siteCss, siteHtml } from "@/lib/site-content";
-import managerImg from "@/assets/manager.jpg.asset.json";
 import techImg from "@/assets/tech-expert.jpg.asset.json";
-import devImg from "@/assets/developer.jpg.asset.json";
 import logoImg from "@/assets/as-logo.jpg.asset.json";
 
 const html = siteHtml
   .replace("__IMG_LOGO__", logoImg.url)
-  .replace("__IMG_ANKUSH__", techImg.url)
-  .replace("__IMG_KRISHNA__", managerImg.url)
-  .replace("__IMG_SACHIN__", devImg.url);
+  .replace("__IMG_ANKUSH__", techImg.url);
 
 export const Route = createFileRoute("/")({
   head: () => ({
